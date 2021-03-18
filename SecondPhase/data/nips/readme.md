@@ -1,1 +1,1 @@
-data for nips
+nips data
