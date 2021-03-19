@@ -18,6 +18,26 @@ I test the code with the following packages. Other versions may also work, but I
 - Pytorch 1.3.1 (with GPU support)<br>
 
 ## Usage
+First phase
+- Download the [data](), and uzip it to "data" directory
+- Prepare the data
+```
+python prepare_data.py --data_dir ./data/nips/ --out_dir ./data/nips_data/ --task_name nips
+python prepare_data.py --data_dir ./data/aan/ --out_dir ./data/aan_data/ --task_name aan
+python prepare_data.py --data_dir ./data/nsf/ --out_dir ./data/nsf_data/ --task_name nsf
+python prepare_data.py --data_dir ./data/sind/ --out_dir ./data/sind_data/ --task_name sind
+python prepare_data.py --data_dir ./data/roc/ --out_dir ./data/roc_data/ --task_name roc
+```
+- Train the model (using the nips data as an example)
+```
+python model.py --data_dir ./data/nips_data/ --output_dir ./trained_models/nips_bert/ --do_train --do_eval --evaluate_during_training --per_gpu_train_batch_size 32 --per_gpu_eval_batch_size 16 --window_size 5 --overwrite_output_dir
+```
+- Do the inference (using the nips data as an example)
+```
+python model.py --data_dir ./data/nips_data/ --output_dir ./trained_models/nips_bert/checkpoint-X/ --do_test --per_gpu_eval_batch_size 64
+```
+Note: (checkpoint-X) should be replaced by the last checkpoint obtained in training.
+
 Second phase
 - Download the [data](https://drive.google.com/file/d/13f6PEZZbn_KnFk53au9s2CbAVFQdTRnC/view?usp=sharing), and unzip it to "data" directory.
 - Train the model
