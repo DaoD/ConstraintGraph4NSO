@@ -6,7 +6,7 @@
 - 2021.3.19 We upload data and source code!
 
 ## Abstract
-This repository contains the source code and datasets for the AAAI 2021 paper Neural Sentence Ordering Based on Constraint Graphs by Zhu and Zhou et al. <br>
+This repository contains the source code and datasets for the AAAI 2021 paper [Neural Sentence Ordering Based on Constraint Graphs](https://arxiv.org/pdf/2101.11178.pdf) by Zhu and Zhou et al. <br>
 
 Sentence ordering is a subtask of text coherence modeling, aiming at arranging a list of sentences in the correct order. Based on the observation that sentence order at different distances may rely on different types of information, we devise a new approach based on multi-granular orders between sentences. These orders from multiple constraint graphs, which are then encoded by GINs and fused into sentence representations. Finally, sentence order is determined using the order-enhanced sentence representations. Our experiments on five benchmark datasets show that our method outperforms all the existing baselines significantly, achieving new state-of-the-art performance. The results confirm the advantage of considering multiple types of order information and using graph neural networks to integrate sentence content and order information for the task.
 
