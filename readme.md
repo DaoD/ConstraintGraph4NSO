@@ -3,7 +3,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
 
 #### News
-- 2021.3.19 We upload data and source code!
+- 2021.3.19: We upload data and source code!
 
 ## Abstract
 This repository contains the source code and datasets for the AAAI 2021 paper [Neural Sentence Ordering Based on Constraint Graphs](https://arxiv.org/pdf/2101.11178.pdf) by Zhu et al. <br>
