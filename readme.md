@@ -18,7 +18,7 @@ I test the code with the following packages. Other versions may also work, but I
 - Pytorch 1.3.1 (with GPU support)<br>
 
 ## Usage
-First phase
+### First phase
 - Download the [data](), and uzip it to "data" directory
 - Prepare the data
 ```
@@ -38,7 +38,7 @@ python model.py --data_dir ./data/nips_data/ --output_dir ./trained_models/nips_
 ```
 Note: (checkpoint-X) should be replaced by the last checkpoint obtained in training.
 
-Second phase
+### Second phase
 - Download the [data](https://drive.google.com/file/d/13f6PEZZbn_KnFk53au9s2CbAVFQdTRnC/view?usp=sharing), and unzip it to "data" directory.
 - Train the model
 ```
