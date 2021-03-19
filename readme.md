@@ -19,7 +19,10 @@ I test the code with the following packages. Other versions may also work, but I
 
 ## Usage
 ### First phase
-- Download the [data](), and uzip it to "data" directory
+- Download the data, and uzip it to "data" directory
+   - For NeurIPS, AAN and NSF dataset, please refer to the paper "Sentence Ordering and Coherence Modeling using Recurrent Neural Networks" and require the dataset from the author.
+   - For Sind dataset, please refer to https://visionandlanguage.net/VIST/dataset.html and [download](https://visionandlanguage.net/VIST/json_files/story-in-sequence/SIS-with-labels.tar.gz) it.
+   - For ROCStory dataset, please refer to https://www.cs.rochester.edu/nlp/rocstories/.
 - Prepare the data
 ```
 python prepare_data.py --data_dir ./data/nips/ --out_dir ./data/nips_data/ --task_name nips
