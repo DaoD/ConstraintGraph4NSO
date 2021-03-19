@@ -18,10 +18,26 @@ I test the code with the following packages. Other versions may also work, but I
 - Pytorch 1.3.1 (with GPU support)<br>
 
 ## Usage
-- 
+Second phase
+- Download the [data](https://drive.google.com/file/d/13f6PEZZbn_KnFk53au9s2CbAVFQdTRnC/view?usp=sharing), and unzip it to "data" directory.
+- Train the model
+```
+python3 run.py --task nips
+```
 
 ## Citations
 If you use the code and datasets, please cite the following paper:  
 ```
-
+@article{DBLP:journals/corr/abs-2101-11178,
+  author    = {Yutao Zhu and
+               Kun Zhou and
+               Jian{-}Yun Nie and
+               Shengchao Liu and
+               Zhicheng Dou},
+  title     = {Neural Sentence Ordering Based on Constraint Graphs},
+  booktitle = {Proceedings of the Thirty-Fifth {AAAI} Conference on Artificial Intelligence,
+               February 2-9, 2021, Virtual Conference},
+  publisher = {{AAAI} Press},
+  year      = {2021},
+}
 ```
