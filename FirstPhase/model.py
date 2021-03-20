@@ -136,7 +136,7 @@ def evaluate_test(args, model, tokenizer, file_type, prefix=""):
     dataset = TensorDataset(all_input_ids, all_attention_mask, all_token_type_ids, all_labels)
 
     eval_outputs_dirs = (args.output_dir,)
-    file_h = codecs.open(args.data_dir + file_type + "_results.tsv", "w", "utf-8")
+    file_h = codecs.open(args.data_dir + file_type + "_results." + str(args.window_size) + ".tsv", "w", "utf-8")
     outF = csv.writer(file_h, delimiter='\t')
 
     results = {}
