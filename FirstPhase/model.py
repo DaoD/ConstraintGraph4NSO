@@ -392,7 +392,7 @@ def main():
     args.model_type = 'bert'
     _, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
     tokenizer = tokenizer_class.from_pretrained('bert-base-uncased')
-    model = model_class.from_pretrained('/home/yutao_zhu/BertModel/')
+    model = model_class.from_pretrained('bert-base-uncased')
     model.to(args.device)
     logger.info("Training/evaluation parameters %s", args)
 
