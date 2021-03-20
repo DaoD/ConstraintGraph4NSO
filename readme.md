@@ -43,6 +43,10 @@ Note: (checkpoint-X) should be replaced by the last checkpoint obtained in train
 
 ### Second phase
 - Download the [data](https://drive.google.com/file/d/13f6PEZZbn_KnFk53au9s2CbAVFQdTRnC/view?usp=sharing), and unzip it to "data" directory.
+Note: preparing input file from the results obtained in the first phase
+```
+python3 prepare_data.py
+```
 - Train the model
 ```
 python3 run.py --task nips
