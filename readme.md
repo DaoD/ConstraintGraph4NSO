@@ -62,9 +62,14 @@ If you use the code and datasets, please cite the following paper:
                Shengchao Liu and
                Zhicheng Dou},
   title     = {Neural Sentence Ordering Based on Constraint Graphs},
-  booktitle = {Proceedings of the Thirty-Fifth {AAAI} Conference on Artificial Intelligence,
-               February 2-9, 2021, Virtual Conference},
+  booktitle = {Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI}
+               2021, Thirty-Third Conference on Innovative Applications of Artificial
+               Intelligence, {IAAI} 2021, The Eleventh Symposium on Educational Advances
+               in Artificial Intelligence, {EAAI} 2021, Virtual Event, February 2-9,
+               2021},
+  pages     = {14656--14664},
   publisher = {{AAAI} Press},
   year      = {2021},
+  url       = {https://ojs.aaai.org/index.php/AAAI/article/view/17722}
 }
 ```
