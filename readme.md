@@ -55,7 +55,7 @@ python3 run.py --task nips
 ## Citations
 If you use the code and datasets, please cite the following paper:  
 ```
-@arinproceedings{ZhuZNLD21,
+@inproceedings{ZhuZNLD21,
   author    = {Yutao Zhu and
                Kun Zhou and
                Jian{-}Yun Nie and
