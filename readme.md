@@ -43,7 +43,7 @@ Note: (checkpoint-X) should be replaced by the last checkpoint obtained in train
 
 ### Second phase
 - Download the [data](https://drive.google.com/file/d/13f6PEZZbn_KnFk53au9s2CbAVFQdTRnC/view?usp=sharing), and unzip it to "data" directory.
-Note: preparing input file from the results obtained in the first phase
+Note: We provide the data after preprocessing here. You can also generate the data from the results obtained in the first phase as:
 ```
 python3 prepare_data.py
 ```
