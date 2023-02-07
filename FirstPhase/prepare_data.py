@@ -290,9 +290,9 @@ def main():
                          help="Task name can be nips | nsf | aan | sind")
     args = parser.parse_args()
 
-    handler = DataHandler(args.data_dir, args.task_name, window_size=3)
     if args.task_name == 'sind':
         for window_size in [2, 3, 5]:
+            handler = DataHandler(args.data_dir, args.task_name, window_size=window_size)
             handler.get_convert_write_sind('train', 'train.' + str(window_size) + '.tsv', args.out_dir)
             handler.get_convert_write_sind('val', 'val.' + str(window_size) + '.tsv', args.out_dir)
             handler.write_test_sind('test', 'test.' + str(window_size) + '.tsv', args.out_dir)
@@ -310,6 +310,7 @@ def main():
             handler.write_test_roc('test', 'test.4predict.' + str(window_size) + '.tsv', args.out_dir)
     elif args.task_name == "nips":
         for window_size in [5, 8, 15]:
+            handler = DataHandler(args.data_dir, args.task_name, window_size=window_size)
             handler.get_convert_write('2013le_papers', 'train.' + str(window_size) + '.tsv', args.out_dir)
             handler.get_convert_write('2014_papers', 'val.' + str(window_size) + '.tsv', args.out_dir)
             handler.write_test('2015_papers', 'test.' + str(window_size) + '.tsv', args.out_dir)
@@ -318,6 +319,7 @@ def main():
             handler.write_test('2015_papers', 'test.4predict.' + str(window_size) + '.tsv', args.out_dir)
     elif args.task_name == "aan":
         for window_size in [6, 11, 20]:
+            handler = DataHandler(args.data_dir, args.task_name, window_size=window_size)
             handler.get_convert_write('train', 'train.' + str(window_size) + '.tsv', args.out_dir)
             handler.get_convert_write('valid', 'val.' + str(window_size) + '.tsv', args.out_dir)
             handler.write_test('test', 'test.' + str(window_size) + '.tsv', args.out_dir)
@@ -326,6 +328,7 @@ def main():
             handler.write_test('test', 'test.4predict.' + str(window_size) + '.tsv', args.out_dir)
     else:
         for window_size in [11, 21, 40]:
+            handler = DataHandler(args.data_dir, args.task_name, window_size=window_size)
             handler.get_convert_write('train', 'train.' + str(window_size) + '.tsv', args.out_dir)
             handler.get_convert_write('valid', 'val.' + str(window_size) + '.tsv', args.out_dir)
             handler.write_test('test', 'test.' + str(window_size) + '.tsv', args.out_dir)
